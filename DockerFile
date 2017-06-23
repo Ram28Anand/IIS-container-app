@@ -1,0 +1,12 @@
+FROM microsoft/iis
+
+RUN mkdir C:\App
+
+COPY . C:\App
+
+RUN powershell -NoProfile -Command \
+    Import-module IISAdministration; \
+    New-IISSite -Name "color" -PhysicalPath C:\App\ColorWebApp -BindingInformation "*:44990:"
+    
+
+EXPOSE 44990

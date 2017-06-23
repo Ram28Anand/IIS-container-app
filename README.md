@@ -4,7 +4,9 @@ Docker file and powershell commands for windows iis app
 Steps to build image and run the container
 
 build image
+
 docker build -t <tag_name> .
+
 ex: docker build -t docker_img .
 
 run container

@@ -5,11 +5,11 @@ Steps to build image and run the container
 
 build image
 docker build -t <tag_name> .
-ex: docker build -t illuscalc .
+ex: docker build -t docker_img .
 
 run container
 docker run -d -p <ext port>:<int port> -t <image_name>
-ex: docker run -d -p 8083:8083 -t illuscalc
+ex: docker run -d -p 8083:8083 -t docker_img
 
 copy powershell scripts
 docker cp enable_iis.ps1 <containerid>:<dest path>

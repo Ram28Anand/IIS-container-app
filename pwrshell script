@@ -1,8 +1,8 @@
 Import-Module WebAdministration
-$iisAppPoolName = "illus_calc_pool"
+$iisAppPoolName = "app_pool"
 $iisAppPoolDotNetVersion = "v4.6"
-$iisAppName = "illuscalc"
-$directoryPath = "C:\ngis_apps\illuscalc"
+$iisAppName = "appname"
+$directoryPath = "C:\color"
 
 #navigate to the app pools root
 cd IIS:\AppPools\
